@@ -1,0 +1,12 @@
+C:\back-end-take-home\src\Routes.Infrastructure\bin\Debug\netcoreapp2.1\Routes.Infrastructure.deps.json
+C:\back-end-take-home\src\Routes.Infrastructure\bin\Debug\netcoreapp2.1\Routes.Infrastructure.dll
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.csprojAssemblyReference.cache
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.csproj.CoreCompileInputs.cache
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.AssemblyInfoInputs.cache
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.AssemblyInfo.cs
+C:\back-end-take-home\src\Routes.Infrastructure\bin\Debug\netcoreapp2.1\Routes.Infrastructure.pdb
+C:\back-end-take-home\src\Routes.Infrastructure\bin\Debug\netcoreapp2.1\Routes.Core.dll
+C:\back-end-take-home\src\Routes.Infrastructure\bin\Debug\netcoreapp2.1\Routes.Core.pdb
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.csproj.CopyComplete
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.dll
+C:\back-end-take-home\src\Routes.Infrastructure\obj\Debug\netcoreapp2.1\Routes.Infrastructure.pdb

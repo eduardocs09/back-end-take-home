@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="Routes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Routes.Core\Routes.Core.csproj" />
+    <ProjectReference Include="..\Routes.Infrastructure\Routes.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
