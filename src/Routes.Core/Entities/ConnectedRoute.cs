@@ -34,5 +34,27 @@ namespace Routes.Core.Entities
             _routes.Add(route);
             Destination = _routes.Last().Destination;
         }
+
+        public override bool Equals(object obj)
+        {
+            bool equals = obj is ConnectedRoute connectedRoute &&
+                Origin == connectedRoute.Origin &&
+                Destination == connectedRoute.Destination &&
+                _routes.Count == connectedRoute.Routes.Count;
+
+            if (equals)
+            {
+                for (int index = 0; index < _routes.Count; index++)
+                {
+                    Route route = ((ConnectedRoute)obj).Routes.ElementAt(index);
+                    if (!_routes[index].Equals(route))
+                    {
+                        equals = false;
+                    }
+                }
+            }
+
+            return equals;
+        }
     }
 }

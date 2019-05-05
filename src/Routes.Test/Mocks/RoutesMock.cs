@@ -16,6 +16,7 @@ namespace Routes.Test.Mocks
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[2], AirportsMock.Airports[5]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[2], AirportsMock.Airports[6]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[3], AirportsMock.Airports[7]),
+            new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[4], AirportsMock.Airports[6]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[1], AirportsMock.Airports[0]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[2], AirportsMock.Airports[0]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[3], AirportsMock.Airports[1]),
@@ -23,7 +24,7 @@ namespace Routes.Test.Mocks
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[5], AirportsMock.Airports[2]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[6], AirportsMock.Airports[2]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[7], AirportsMock.Airports[3]),
-
+            
             //Routes that are not connected to ones above
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[8], AirportsMock.Airports[9]),
             new Route(AirlinesMock.Airlines[0], AirportsMock.Airports[8], AirportsMock.Airports[10]),
