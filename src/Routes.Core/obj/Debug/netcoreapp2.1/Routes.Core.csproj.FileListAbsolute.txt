@@ -1,9 +1,0 @@
-C:\back-end-take-home\src\Routes.Core\bin\Debug\netcoreapp2.1\Routes.Core.deps.json
-C:\back-end-take-home\src\Routes.Core\bin\Debug\netcoreapp2.1\Routes.Core.dll
-C:\back-end-take-home\src\Routes.Core\bin\Debug\netcoreapp2.1\Routes.Core.pdb
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.csprojAssemblyReference.cache
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.csproj.CoreCompileInputs.cache
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.AssemblyInfoInputs.cache
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.AssemblyInfo.cs
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.dll
-C:\back-end-take-home\src\Routes.Core\obj\Debug\netcoreapp2.1\Routes.Core.pdb
