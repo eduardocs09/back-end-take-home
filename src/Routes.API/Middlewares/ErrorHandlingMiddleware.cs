@@ -36,7 +36,11 @@ namespace Routes.API.Middlewares
             {
                 case KeyNotFoundException notFoundException:
                     errors = notFoundException.Message;
-                    context.Response.StatusCode = (int)HttpStatusCode.NoContent;
+                    context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                    break;
+                case ArgumentNullException notFoundException:
+                    errors = notFoundException.Message;
+                    context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
                     break;
                 case Exception commonException:
                     errors = string.IsNullOrWhiteSpace(commonException.Message) ? "The server failed to process your request." : commonException.Message;

@@ -25,5 +25,11 @@ namespace Routes.Core.Entities
             Latitude = latitude;
             Longitude = longitude;
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Airport airport &&
+                Iata == airport.Iata;
+        }
     }
 }

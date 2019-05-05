@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes.Application", "Routes.Application\Routes.Application.csproj", "{6E6B25E9-1B39-40E1-ADB8-0EBC12D0EEEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routes.Application", "Routes.Application\Routes.Application.csproj", "{6E6B25E9-1B39-40E1-ADB8-0EBC12D0EEEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes.Core", "Routes.Core\Routes.Core.csproj", "{1E37E738-7098-434E-9B29-69513DAFB1D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routes.Core", "Routes.Core\Routes.Core.csproj", "{1E37E738-7098-434E-9B29-69513DAFB1D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes.Infrastructure", "Routes.Infrastructure\Routes.Infrastructure.csproj", "{ADE1C11F-5E6D-4E75-8B7E-76A507B7F6F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routes.Infrastructure", "Routes.Infrastructure\Routes.Infrastructure.csproj", "{ADE1C11F-5E6D-4E75-8B7E-76A507B7F6F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes.API", "Routes.API\Routes.API.csproj", "{D11B1823-D2DB-4DAF-9BB0-62FB62230E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Routes.API", "Routes.API\Routes.API.csproj", "{D11B1823-D2DB-4DAF-9BB0-62FB62230E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routes.Test", "Routes.Test\Routes.Test.csproj", "{B7FDCF2A-DE52-4EC8-9897-827275469F98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D11B1823-D2DB-4DAF-9BB0-62FB62230E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D11B1823-D2DB-4DAF-9BB0-62FB62230E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D11B1823-D2DB-4DAF-9BB0-62FB62230E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FDCF2A-DE52-4EC8-9897-827275469F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FDCF2A-DE52-4EC8-9897-827275469F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FDCF2A-DE52-4EC8-9897-827275469F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FDCF2A-DE52-4EC8-9897-827275469F98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

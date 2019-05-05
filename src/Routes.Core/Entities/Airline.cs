@@ -21,5 +21,11 @@ namespace Routes.Core.Entities
             ThreeDigitCode = threeDigitCode;
             Country = country;
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Airline airline &&
+                ThreeDigitCode == airline.ThreeDigitCode;
+        }
     }
 }

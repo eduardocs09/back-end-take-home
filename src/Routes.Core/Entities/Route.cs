@@ -19,5 +19,13 @@ namespace Routes.Core.Entities
             Origin = origin;
             Destination = destination;
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Route route &&
+                Airline.Equals(route.Airline) &&
+                Origin.Equals(route.Origin) &&
+                Destination.Equals(route.Destination);
+        }
     }
 }
