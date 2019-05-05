@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Routes.API.Middlewares;
+using Routes.API.Profiles;
 using Routes.Application.Interfaces;
 using Routes.Application.Populator;
 using Routes.Application.Routes;
@@ -37,10 +39,22 @@ namespace Routes.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("RoutesDb"));
 
+            services.AddAutoMapper();
+
             services.AddScoped<IAppPopulator, AppPopulator>();
             services.AddScoped<IAppRoutes, AppRoutes>();
             services.AddScoped<IFileReader, FileReader>();
             services.AddScoped<IRepository, Repository>();
+
+            var mappingConfig = new MapperConfiguration(c =>
+            {
+                c.AddProfile(new AirlineViewModelProfile());
+                c.AddProfile(new AirportViewModelProfile());
+                c.AddProfile(new ConnectionViewModelProfile());
+                c.AddProfile(new RouteViewModelProfile());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

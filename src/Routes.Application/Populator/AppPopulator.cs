@@ -71,7 +71,7 @@ namespace Routes.Application.Populator
                 string[] splittedString = line.Split(",");
                 double.TryParse(splittedString[4], out double latitude);
                 double.TryParse(splittedString[5], out double longitude);
-                var airline = new Airport(
+                var airport = new Airport(
                     splittedString[0],
                     splittedString[1],
                     splittedString[2],
@@ -79,7 +79,8 @@ namespace Routes.Application.Populator
                     latitude,
                     longitude);
 
-                airports.Add(airline);
+                if (airport.Iata != "\\N")
+                    airports.Add(airport);
             }
             return airports;
         }
@@ -99,8 +100,11 @@ namespace Routes.Application.Populator
                 Airport origin = airports.FirstOrDefault(a => a.Iata == originCode);
                 Airport destination = airports.FirstOrDefault(a => a.Iata == destinationCode);
 
-                Route route = new Route(airline, origin, destination);
-                routes.Add(route);
+                if ((airline != null) && (origin != null) && (destination != null))
+                {
+                    Route route = new Route(airline, origin, destination);
+                    routes.Add(route);
+                }
             }
             return routes;
         }

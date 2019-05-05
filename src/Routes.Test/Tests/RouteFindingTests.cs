@@ -14,7 +14,7 @@ namespace Routes.Test.Tests
         public RouteFindingTests()
         {
             _repository.Setup(r => r.List<Airport>()).Returns(AirportsMock.Airports);
-            _repository.Setup(r => r.List<Route>()).Returns(RoutesMock.Routes);
+            _repository.Setup(r => r.List<Route>(x => x.Airline, x => x.Origin, x => x.Destination)).Returns(RoutesMock.Routes);
             _appRoutes = new AppRoutes(_repository.Object);
         }
 
@@ -24,7 +24,7 @@ namespace Routes.Test.Tests
             var origin = AirportsMock.Airports[0].Iata;
             var destination = AirportsMock.Airports[8].Iata;
             ConnectedRoute route = _appRoutes.FindShortestRoute(origin, destination);
-            Assert.Empty(route.Routes);
+            Assert.Null(route);
         }
 
         [Fact]
